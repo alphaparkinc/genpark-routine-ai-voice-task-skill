@@ -1,0 +1,34 @@
+{
+  "name": "genpark-routine-ai-voice-task-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Routine AI-like voice command parser for work management and task automation.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "voice",
+    "task-management",
+    "routine",
+    "automation"
+  ],
+  "inputs": {
+    "voice_command": {
+      "type": "string"
+    },
+    "current_tasks": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "parsed_action": {
+      "type": "string"
+    },
+    "updated_tasks": {
+      "type": "array"
+    },
+    "response": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
